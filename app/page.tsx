@@ -1,22 +1,33 @@
 import Image from 'next/image'
 import { faGithub, faFigma, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { IconDefinition, faMousePointer, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { IconDefinition, faMousePointer, faEnvelope, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FC } from 'react'
 
 export default function Home() {
   return (
-    <div className='flex flex-col gap-10 px-24 items-center'>
-      <section id="intro" className='flex flex-col gap-5 h-[60vh] max-w-screen-xl justify-center'>
-            <p className="text-xl">{`Hi! I'm`}
-              <br/> 
-              <span className="text-6xl text-dark-green">{introContent.name}</span>
-            </p>
-            <p className='text-5xl'>{`I'm a ${introContent.role} based in ${introContent.location}.`}</p>
-            <p className='text-2xl'>{introContent.message}</p>
-        </section>
-
-        <section id="projects" className='flex flex-col m-10 gap-20 max-w-screen-xl'>
+    <div className='flex flex-col gap-10 items-center'>
+      <section className="inline">
+        <div className="relative w-[100vw] w-full h-[80vh]">
+          <div className='h-[30vh] -z-1'>
+            <video autoPlay muted loop className='object-cover w-[100vw] h-[80vh]'>
+              <source src="/HeroVideo4KHighFrame.mp4" type="video/mp4"/>
+            </video>
+          </div>
+          <div className='relative flex flex-col items-center'>
+            <div className='flex flex-col bg-black bg-opacity-50 w-[70vw] p-10 gap-4 text-white rounded-2xl'>
+              <p className="text-xl">{`Hi! I'm`}
+                  <br/> 
+                  <span className="text-6xl text-dark-green">{introContent.name}</span>
+                </p>
+                <p className='text-5xl'>{`I'm a ${introContent.role} based in ${introContent.location}.`}</p>
+                <p className='text-2xl'>{introContent.message}</p>
+              </div>
+          </div>
+        </div>
+      </section>
+        <FontAwesomeIcon icon={faChevronDown} size='2xl'></FontAwesomeIcon>
+        <section id="projects" className='flex flex-col px-24 m-10 gap-20 max-w-screen-xl'>
           <span className='text-4xl font-bold'>{`Projects I'm Proud of`}</span>
           {Array(4)
             .fill(0)
@@ -187,3 +198,5 @@ const ProjectArticle: FC<{
       </div>
     </article>  
   )
+
+  

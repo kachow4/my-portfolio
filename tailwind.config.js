@@ -20,7 +20,8 @@ module.exports = {
       'light-green': '#D0D9CC',
       'dark-green': '#8FBF9B',
       'light-brown': '#CABA9C',
-      'dark-brown': '#4D2D18'
+      'dark-brown': '#4D2D18',
+      'black': '#000'
     },
     extend: {
       backgroundImage: {

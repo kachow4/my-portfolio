@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 export default function Navbar() {
   const currentRoute = usePathname();
   return (
-      <div className="flex px-24 py-10 justify-between">
+      <div className="flex px-24 pt-10 pb-5 justify-between">
           <div className="text-2xl font-bold">
               Katie Chow
           </div>

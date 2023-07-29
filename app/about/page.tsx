@@ -59,7 +59,7 @@ export default function About() {
         </section>
         <section id="fun" className='flex flex-col gap-2 text-center p-10 text-light-brown bg-dark-brown'>
                 <h3 className='font-semibold text-xl'>Fun Facts:</h3>
-                <ul>
+                <ul className='italic'>
                     <li>
                         {`You can always find me at a cozy cafe drinking overpriced iced espresso drinks as I work `}<FontAwesomeIcon icon={faMugHot}></FontAwesomeIcon>
                     </li>
