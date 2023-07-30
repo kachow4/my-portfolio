@@ -15,12 +15,12 @@ export default function Home() {
 
           <div className='relative flex flex-col items-center justify-center'>
             <div className='flex flex-col bg-black bg-opacity-50 p-4 w-[80vw] gap-1 tablet:w-[70vw] tablet:p-10 tablet:gap-4 text-white rounded-2xl'>
-              <p className="text-xs tablet:text-xl">{`Hi! I'm`}
+              <p className="text-sm tablet:text-xl">{`Hi! I'm`}
                   <br/> 
-                  <span className="text-2xl tablet:text-6xl text-dark-green">{introContent.name}</span>
+                  <span className="text-4xl tablet:text-6xl text-dark-green">{introContent.name}</span>
                 </p>
-                <p className='text-xl tablet:text-5xl'>{`I'm a ${introContent.role} based in ${introContent.location}.`}</p>
-                <p className='text-sm tablet:text-2xl'>{introContent.message}</p>
+                <p className='text-2xl tablet:text-5xl'>{`I'm a ${introContent.role} based in ${introContent.location}.`}</p>
+                <p className='text-base tablet:text-2xl'>{introContent.message}</p>
               </div>
           </div>
 
