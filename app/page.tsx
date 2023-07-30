@@ -42,7 +42,7 @@ export default function Home() {
                     {introContent.name.toUpperCase()}
                   </span>
               </p>
-              <p className='text-2xl min-w-[310px] 
+              <p className='text-2xl min-w-[300px] 
                             tablet:text-3xl 
                             laptop:text-4xl
                             desktop:text-5xl'>{`I'm a ${introContent.role} based in ${introContent.location}.`}</p>
