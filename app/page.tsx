@@ -26,7 +26,7 @@ export default function Home() {
 
         </div>
 
-      <FontAwesomeIcon className="hidden invisble tablet:inline tablet:py-8" icon={faChevronDown} size="2xl"></FontAwesomeIcon>
+      <FontAwesomeIcon className="hidden invisible tablet:inline tablet:py-8" icon={faChevronDown} size="2xl"></FontAwesomeIcon>
     
     </div>
   )
