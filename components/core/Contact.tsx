@@ -7,14 +7,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Contact() {
   return (
   
-    <div className="flex bg-dark-green px-8 py-5 tablet:px-24 tablet:py-10 justify-center">
-      <div id="contact" className='flex flex-col gap-2 tablet:gap-5 bg-dark-green text-white items-center tablet:p-12'>
-            <span className='font-bold text-base tablet:text-2xl'>Contact Me</span>
+    <div className="flex bg-dark-green px-8 py-5 justify-center min-w-[320px] 
+                    laptop:px-28 
+                    laptop+:px-24 ">
+      <div id="contact" className='flex flex-col gap-2 bg-dark-green text-white items-center min-w-[320px] 
+                                  tablet+:p-6 tablet+:gap-4 
+                                  laptop:gap-4
+                                  laptop+:p-12'>
+            <span className='font-bold text-base tablet+:text-2xl'>Contact Me</span>
 
-            <p className='text-sm tablet:text-base text-center'>Please feel free to reach out! I would love connect and discuss open opportunities and receive any feedback 
+            <p className='text-sm text-center min-w-[320px] tablet+:text-base'>Please feel free to reach out! I would love connect and discuss open opportunities and receive any feedback 
                 on my work.</p>
             
-            <ul className="flex p-2 gap-10 w-full justify-center">
+            <ul className="flex p-2 gap-10 w-full justify-center min-w-[320px]">
                 <li>
                   <a href="https://www.linkedin.com/in/katie-chow-24a489166/" target="_blank">
                     <FontAwesomeIcon className="transition ease-out duration-500 hover:scale-[1.25]" icon={faLinkedin} size="2xl"></FontAwesomeIcon>
