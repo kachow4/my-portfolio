@@ -8,7 +8,7 @@ export default function Home() {
         <div className="relative min-h-[320px] tablet:h-[84vh]">
 
           <div className='h-[7vh] max-h-full tablet:max-h-full tablet:h-[30vh] -z-1'>
-            <video autoPlay muted loop className='object-cover min-h-[430px] h-[40vh] tablet:w-[100vw] tablet:h-[85vh]'>
+            <video autoPlay muted loop playsInline className='object-cover min-h-[430px] h-[40vh] tablet:w-[100vw] tablet:h-[85vh]'>
               <source src="/HeroVideo4KHighFrame.mp4" type="video/mp4"/>
             </video>
           </div>
