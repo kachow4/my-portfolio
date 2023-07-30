@@ -7,10 +7,12 @@ module.exports = {
   ],
   theme: {
     screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
+      'tablet': '480px',
+      'tablet+': '640px',
+      'laptop': '768px',
+      'laptop+': '1024px',
+      'desktop': '1280px',
+      'desktop+': '1536px',
     },
     colors: {
       'white': '#FFF',
