@@ -36,7 +36,12 @@ const projects = [
     {
       id: 0,
       name: 'URMO Website',
-      description: 'I designed and built a website for my previous exhibition dance team, URMO. I recently re-made the website using React, while the original project (made in 2020) was coded in raw HTML and CSS. My goal was to create a new source to increase online traffic for our recruitment. The repository is now shared with URMO so that following generations can clone and created updated websites to reflect the advertisements and accomplishments of the current team.',
+      description: `I designed and built a website for my previous exhibition dance team, URMO. 
+                    I recently re-made the website using React, while the original project (made in 2020) 
+                    was coded in raw HTML and CSS. My goal was to create a new source to increase online 
+                    traffic for our recruitment. The repository is now shared with URMO leadership so that 
+                    following generations can clone and create updated websites to reflect the advertisements 
+                    and accomplishments of the current team.`,
       technologies: ['React', 'NextJS', 'TailwindCSS'],
       links: [
         {
