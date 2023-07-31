@@ -15,7 +15,8 @@ export default function Navbar() {
   }
 
   return (
-    <nav className='w-full h-full flex flex-col py-3 px-5 tablet:flex-row tablet:p-5 tablet:justify-between tablet+:px-10 laptop:px-20 laptop+:px-24 desktop:px-64'>
+    <nav className='w-full h-full flex flex-col py-3 px-5 
+                    tablet:flex-row tablet:p-5 tablet:justify-between'>
       <div className='flex gap-2 items-center'>
         <FontAwesomeIcon className='tablet:invisible tablet:hidden' icon={faBars} size="lg" onClick={toggleHamburger}></FontAwesomeIcon>
         <div className='flex w-full text-xl font-semibold justify-center whitespace-nowrap tablet:justify-start'>
