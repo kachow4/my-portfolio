@@ -6,12 +6,23 @@ import { faBowlFood, faBowlRice, faCoffee, faMugHot, faPepperHot, faTags } from 
 
 export default function About() {
   return (
-    <div>
-        <section id="profile" className='flex flex-col gap-10 px-24 py-20 items-center'>
-            <article className="grid grid-cols-10 gap-4 max-w-screen-xl">
-                <div className='row-start-1 row-end-2 col-start-4 col-end-11 order-2 text-right'>
-                    <span className='text-dark-green text-3xl p-4 font-semibold'>More About Katie!</span>
-                    <div className="flex flex-col gap-5 bg-light-green mt-5 p-4 leading-6 rounded-lg">
+    <div className='min-w-[300px]'>
+        <section id="profile" className='flex flex-col
+                                        tablet+:py-6 tablet+:gap-10 tablet+:items-center
+                                        laptop:py-8 
+                                        laptop+:px-24 laptop+:py-20
+                                        desktop+:px-72'>
+            <article className="max-w-screen-xl
+                                tablet+:grid tablet+:grid-cols-10 tablet+:gap-4">
+                <div className='flex flex-col gap-1 p-4
+                                tablet:p-6
+                                tablet+:row-start-1 tablet+:row-end-2 tablet+:col-start-4 tablet+:col-end-11 tablet+:order-2 tablet+:text-right'>
+                    <span className='text-dark-green text-xl
+                                    tablet:text-2xl
+                                    tablet+:text-3xl tablet+:p-4 font-semibold'>More About Katie!</span>
+                    <div className="flex flex-col gap-3 bg-light-green p-2 rounded-lg text-xs
+                                    tablet:mt-2 tablet:p-4 tablet:text-sm
+                                    tablet+:gap-5 laptop:mt-5 laptop:leading-6 laptop:text-base">
                         <p>
                             {`My name is Katie (she/her) and I'm an aspiring Web Developer striving to 
                             build eye-catching, optimal websites. My goal
@@ -34,32 +45,49 @@ export default function About() {
                             {`My goal is to produce the best work I can and allow anyone to express and share their positive impact 
                             on the world.`}
                         </p>
-
+                        <p>
                         <span className='font-bold'>My favorite Technologies Include:</span>
-                        <ul className='flex justify-end gap-6'>
-                            <li>React</li>
-                            <li>Typescript</li>
-                            <li>NextJS</li>
-                            <li>TailwindCSS</li>
-                            <li>Angular</li>
-                        </ul>
+                            <ul className='flex gap-2  
+                                            tablet+:justify-end tablet+:gap-6'>
+                                <li>React</li>
+                                <li>Typescript</li>
+                                <li>NextJS</li>
+                                <li>TailwindCSS</li>
+                                <li>Angular</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
-                <div className='flex justify-center align-center row-start-1 row-end-2 col-start-1 col-end-5 rounded-full overflow-hidden'>
-                    <Image 
-                        priority
-                        src='/images/KatieGradshoot-43.jpg'
-                        width={500}
-                        height={500}
-                        style={{objectFit: "cover", objectPosition: "center"}}
-                        alt={`Katie's Graduation Photo 2022`}
-                    />
+                <div className='flex justify-center rounded-full overflow-hidden mb-4
+                                tablet+:ml-6 tablet+:row-start-1 tablet+:row-end-2 tablet+:col-start-1 tablet+:col-end-5
+                                desktop+:max-w-[500px]'>
+                    <div className='max-w-[200px] rounded-full overflow-hidden tablet+:hidden'>
+                        <Image
+                            priority
+                            src='/images/KatieGradshoot-43.jpg'
+                            width={200}
+                            height={200}
+                            style={{objectFit: "cover", objectPosition: "center"}}
+                            alt={`Katie's Graduation Photo 2022`}
+                        />
+                    </div>
+                        <Image className='hidden tablet+:block'
+                            priority
+                            src='/images/KatieGradshoot-43.jpg'
+                            width={500}
+                            height={500}
+                            style={{objectFit: "cover", objectPosition: "center"}}
+                            alt={`Katie's Graduation Photo 2022`}
+                        />
                 </div>
             </article>
         </section>
-        <section id="fun" className='flex flex-col gap-2 text-center p-10 text-light-brown bg-dark-brown'>
+        <section className='flex flex-col gap-1 pl-7 p-4 text-sm text-light-brown bg-dark-brown italic
+                            tablet:px-14 tablet:py-6
+                            tablet+:gap-2 tablet+:text-center tablet+:p-10'>
                 <h3 className='font-semibold text-xl'>Fun Facts:</h3>
-                <ul className='italic'>
+                <ul className='flex flex-col gap-2 list-disc
+                                tablet+:list-none'>
                     <li>
                         {`You can always find me at a cozy cafe drinking overpriced iced espresso drinks as I work `}<FontAwesomeIcon icon={faMugHot}></FontAwesomeIcon>
                     </li>
