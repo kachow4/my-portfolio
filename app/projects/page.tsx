@@ -6,7 +6,7 @@ import { FC } from 'react'
 
 export default function Projects() {
   return (
-    <section className='flex flex-col min-w-[320px] max-w-screen-xl px-8 text-center gap-4 mt-10
+    <section className='flex flex-col min-w-[320px] max-w-screen-xl px-8 text-center gap-4 mt-10 mb-5
                         tablet+:p-5 tablet+:text-left tablet+:mt-5
                         laptop:px-10 
                         laptop+:gap-10 laptop+:m-10
