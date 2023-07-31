@@ -7,12 +7,12 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'tablet': '480px', //light-green
-      'tablet+': '640px', //dark-green
-      'laptop': '768px', //light-pink
-      'laptop+': '1024px', //med-pink
-      'desktop': '1280px', //dark-pink
-      'desktop+': '1536px', //brown
+      'tablet': '480px', 
+      'tablet+': '640px', 
+      'laptop': '768px', 
+      'laptop+': '1024px',
+      'desktop': '1280px', 
+      'desktop+': '1536px', 
     },
     colors: {
       'white': '#FFF',

@@ -6,8 +6,15 @@ import { FC } from 'react'
 
 export default function Projects() {
   return (
-    <section className='flex flex-col px-24 m-10 gap-20 max-w-screen-xl'>
-        <span className='text-4xl font-bold'>{`Projects I'm Proud of`}</span>
+    <section className='flex flex-col min-w-[320px] max-w-screen-xl px-8 text-center gap-4 mt-10
+                        tablet+:p-5 tablet+:text-left tablet+:mt-5
+                        laptop:px-10 
+                        laptop+:gap-10 laptop+:m-10
+                        desktop:gap-20 desktop:px-24
+                        desktop+:px-64'>
+        <span className='hidden font-bold text-3xl
+                        tablet+:block
+                        laptop:text-4xl'>{`Projects I'm Proud of`}</span>
         {Array(4)
         .fill(0)
         .map((x, i) => (
@@ -105,14 +112,16 @@ const projects = [
     }
   ]
   
-  const LinkItem: FC<{
+  const LinkButton: FC<{
     link: string
     icon: IconDefinition
     name: string
     }> = ({link, icon, name}) => (
-      <li>
-      <a className="flex gap-2 px-2 py-1 bg-dark-green hover:bg-light-green duration-300 rounded-md" href={link} target="_blank">
-        <FontAwesomeIcon icon={icon} size="xl" ></FontAwesomeIcon>
+    <li>
+      <a className="flex gap-1 py-1 items-center bg-dark-green hover:bg-light-green duration-300 rounded-md
+                    laptop:gap-2 px-1 laptop:px-2" href={link} target="_blank">
+        <FontAwesomeIcon className="hidden laptop+:block" icon={icon} size="xl" ></FontAwesomeIcon>
+        <FontAwesomeIcon className="laptop+:hidden" icon={icon} size="lg" ></FontAwesomeIcon>
         {name}
       </a>
     </li>
@@ -126,25 +135,44 @@ const projects = [
     imgPath: string
     reverse: boolean
     }> = ({name, description, technologies, links, imgPath, reverse}) => (
-      <article className="grid grid-cols-12 gap-4">
-        <div className={`flex flex-col gap-3 row-start-1 row-end-2 ${reverse ? `col-start-6 col-end-13 text-right` : `col-start-1 col-end-7 text-left`} order-2`}>
-            <h3 className='text-2xl text-dark-green font-bold'>{name}</h3>
-            <p className="bg-light-green p-4 leading-6 rounded-xl">{description}</p>
-            <div className='flex flex-col gap-2'>
-              <h4 className='text-base font-bold'>Technologies Include:</h4>
-              <ul className={`flex gap-8 ${reverse ? `justify-end` : `justify-start`}`}>
+      <article className="flex flex-col gap-2
+                          tablet+:grid tablet+:grid-cols-12 tablet+:gap-4">
+        <h3 className='font-bold text-left text-lg tablet+:hidden'>
+        {name}
+        </h3>
+        <div className={`flex flex-col gap-3 order-2 text-left
+                        tablet+:row-start-1 tablet+:row-end-2 
+                        ${reverse ? `col-start-6 col-end-13 tablet+:text-right` : `col-start-1 col-end-7 tablet+:text-left`}`}>
+            <h3 className='text-dark-green font-bold
+                          hidden tablet+:block tablet+:text-xl
+                          laptop:text-2xl'>
+                            {name}
+            </h3>
+            <p className="bg-light-green text-xs p-2 rounded-xl
+                          tablet+:text-sm tablet+:p-3
+                          laptop+:text-base laptop+:p-4 laptop+:leading-6">{description}</p>
+            <div className='flex flex-col gap-1 
+                            tablet+:gap-2'>
+              <h4 className='font-bold text-sm
+                            tablet+:text-base'>Technologies Include:</h4>
+              <ul className={`flex gap-4 text-sm whitespace-nowrap
+                              tablet+:gap-8 tablet+:${reverse ? `justify-end` : `justify-start`}
+                              laptop:text-base`}>
               {Array(technologies.length)
                 .fill(0)
                 .map((x, i) => (
                   <li key={i}>{technologies[i]}</li>
                   ))}
               </ul>
-              <h4 className='text-base font-bold'>Links:</h4>
-              <ul className={`flex gap-8 ${reverse ? `justify-end` : `justify-start`} text-white`}>
+              <h4 className='text-sm font-bold
+                            tablet+:text-base'>Links:</h4>
+              <ul className={`flex gap-8 text-sm text-white
+                              tablet+:${reverse ? `justify-end` : `justify-start`}
+                              laptop+:text-base`}>
                 {Array(links.length)
                 .fill(0)
                 .map((x, i) => (
-                  <LinkItem
+                  <LinkButton
                     key={links[i].id}
                     link={links[i].url}
                     icon={links[i].icon}
@@ -154,9 +182,9 @@ const projects = [
               </ul>
             </div>
         </div>
-        <div className={`flex justify-center align-center overflow-hidden row-start-1 row-end-2 ${reverse ? `col-start-1 col-end-7` : `col-start-6 col-end-13`} border-solid border-t border-l border-light-green rounded-2xl p-1`}>
+        <div className={`flex justify-center align-center overflow-hidden row-start-1 row-end-2 ${reverse ? `col-start-1 col-end-7` : `col-start-6 col-end-13`} p-1`}>
           <div className='-z-1'>
-            <Image 
+            <Image className='border-solid border-t border-l border-light-green rounded-2xl'
               priority
               src={imgPath}
               width={700}
