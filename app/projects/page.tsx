@@ -120,7 +120,7 @@ const projects = [
     <li>
       <a className="flex gap-1 py-1 items-center bg-dark-green hover:bg-light-green duration-300 rounded-md
                     laptop:gap-2 px-1 laptop:px-2" href={link} target="_blank">
-        <FontAwesomeIcon className="hidden laptop+:block" icon={icon} size="xl" ></FontAwesomeIcon>
+        <FontAwesomeIcon className="hidden" icon={icon} size="xl" ></FontAwesomeIcon>
         <FontAwesomeIcon className="laptop+:hidden" icon={icon} size="lg" ></FontAwesomeIcon>
         {name}
       </a>
