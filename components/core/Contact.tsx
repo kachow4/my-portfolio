@@ -21,7 +21,7 @@ export default function Contact() {
             
             <ul className="flex p-2 gap-10 w-full justify-center min-w-[320px]">
                 <li>
-                  <a href="https://www.linkedin.com/in/katie-chow-24a489166/" target="_blank">
+                  <a href="https://www.linkedin.com/in/katie-chow-sfo/" target="_blank">
                     <FontAwesomeIcon className="transition ease-out duration-500 hover:scale-[1.25]" icon={faLinkedin} size="2xl"></FontAwesomeIcon>
                     <span className="sr-only">LinkedIn</span>
                   </a>

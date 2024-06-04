@@ -32,7 +32,7 @@ export default function About() {
 
                         <p>
                             {`I graduated from UCI in 2022 as a computer science major and psychology and social 
-                            sciences minor, and I currently work as a Jr. Software Engineer at Prism Software. I've always wanted 
+                            sciences minor, and I currently work as a Software Engineer at Prism Software. I've always wanted 
                             to combine my passion for computer programming and psychology into my dream career. 
                             My experiences working with small businesses and  non-profits 
                             have always inspired and motivated me to develop high quality websites to set them 
@@ -49,11 +49,11 @@ export default function About() {
                         <span className='font-bold'>My favorite Technologies Include:</span>
                             <ul className='flex gap-2  
                                             tablet+:justify-end tablet+:gap-6'>
-                                <li>React</li>
+                                <li>AngularJS</li>
                                 <li>Typescript</li>
-                                <li>NextJS</li>
                                 <li>TailwindCSS</li>
-                                <li>Angular</li>
+                                <li>React</li>
+                                <li>NextJS</li>
                             </ul>
                         </p>
                     </div>
