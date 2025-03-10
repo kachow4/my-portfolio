@@ -21,7 +21,7 @@ export default function Home() {
                                                               laptop:w-[100vw] laptop:h-[70vh] 
                                                               laptop+:h-[75vh]
                                                               desktop:h-[85vh]'>
-              <source src="/HeroVideoV2.mp4" type="video/mp4"/>
+              <source src="/HeroVideoV3.mp4" type="video/mp4"/>
             </video>
           </div>
 
