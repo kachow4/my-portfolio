@@ -35,7 +35,7 @@ export default function Navbar() {
           <Link href="/projects">Projects</Link>
         </li>
         <li className="transition ease-out duration-500 hover:text-dark-green">
-          <Link target="_blank" href="https://www.dropbox.com/scl/fi/i5rnzf2fzvx5czv9tx6ir/KatieChowResume2025.pdf?rlkey=q9ebc5b2smn211u6ynzfpbagb&st=65yp6a70&dl=0" rel="noopener noreferrer">Resume</Link>
+          <Link target="_blank" href="https://www.dropbox.com/scl/fi/gkfjrak1gwferg2y83f0t/KatieChowAPMResume2025.pdf?rlkey=vat27posvu5cv7xybe53rjuqp&st=hnnzwslh&dl=0" rel="noopener noreferrer">Resume</Link>
         </li>
       </ul>
     </nav>
